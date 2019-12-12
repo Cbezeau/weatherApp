@@ -5,6 +5,12 @@ class Weather extends React.Component {
         return (
             <div className="weather__info">
                 {
+                    !this.props.city && !this.props.country && <div className="instructions"><h2>Instructions</h2>
+                    <p>1. Enter the City you wish to find the current weather</p>
+                    <p>2. Enter the Country Code for the country your city is located within (Ex. Canada would be CA, United States would be US)</p>
+                    <p>3. Once finished click the button 'Get Weather' and it will display your cities current location, temperature, humidity and Conditions</p></div>
+                }
+                {
                     this.props.city && this.props.country && <p className="weather__key">Location:
                         <span className="weather__value"> {this.props.city}, {this.props.country}</span>
                         </p>
