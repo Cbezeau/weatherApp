@@ -4,6 +4,11 @@ class Weather extends React.Component {
     render (){
         return (
             <div className="weather__info">
+                 {
+                    this.props.error && <div className="instructions">
+                        <p className="error">Unable to find location, please try again!</p>
+                    </div>
+                }
                 {
                     !this.props.city && !this.props.country && <div className="instructions"><h2>Instructions</h2>
                     <p>1. Enter the City you wish to find the current weather</p>

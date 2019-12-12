@@ -188,3 +188,36 @@ h2{
   padding-bottom:10px;
  
 }
+
+.error{
+  color: #D181AE !important;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    height:200vh;
+  }
+  .main{
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size:5rem;
+  }
+  .title-container__subtitle{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .form-container {
+    padding-top:50px;
+    padding-left:45px;
+  }
+  .instructions p{
+    font-size: 1rem;
+  }
+}
